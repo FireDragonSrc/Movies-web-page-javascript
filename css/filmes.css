@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda:wght@400;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+html, body{
+    height: 100%;
+}
+body{
+    background-image: linear-gradient(to right, #000000, #0d0d0d, #171717, #1e1e1e, #262626);
+    background-position: center;
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+header{
+    font-family: "Coda", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    width: 100%;
+    height: 45px;
+    padding-top: .5%;
+    background-color:rgb(20, 20, 20);
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    position: fixed;
+    z-index: 2;
+}
+.prenc{
+    width: 100%;
+    height: 45px;
+}
+a{
+    color: rgb(155, 155, 155);
+    cursor: pointer;}
+.logo{font-size: 25px;}
+.menu > ul{
+    display: flex;
+    gap: 25px;
+    font-size: 20px;
+}
+.menu > ul > li{transition: .5s;}
+.menu > ul > li > a{transition: .5s;}
+.menu > ul > li > img{transition: .5s;}
+.menu > ul > li:hover{
+    transform: scale(1.1);
+    color: white;
+}
+.menu > ul > li > a:hover{color: white;}
+.menu > ul > li > img:hover{
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.pesquisar-div{
+    width: 50%;
+}
+input[type="search"]{
+    border-radius: 5px;
+    width: 100%;
+    height: 75%;
+    font-size: 18px;
+    padding-left: 5px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    transition: 1s;
+}
+input[type="search"]:focus{
+    background-color: #424242;
+}
+.container{
+    width: 100%;
+    padding-top: calc(30px + 45px);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: 1s;
+}
+.container > div{
+    width: 250px;
+    height: 350px;
+    background-color: #000000;
+    border-radius: 5px;
+    margin-bottom: 10%;
+    transition: .5s;
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgb(0, 0, 0) 0px 13px 27px -5px, rgb(0, 0, 0) 0px 8px 16px -8px;
+}
+@media(max-width:900px){.container > div{margin-bottom: 20% !important;}}
+.container > div:hover{transform: scale(1.1);}
+#nome{
+    padding-left: 10px;
+    font-size: 23px;
+}
+.ultimas-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+    color: white;
+    font-size: 18px;
+}
+.container > div > a > img{
+    border-radius: 10px;
+    width: 100%;
+    height: 90%;
+}
+.date{
+    color: rgb(138, 138, 138);
+}

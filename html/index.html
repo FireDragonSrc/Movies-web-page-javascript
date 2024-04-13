@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMDB - Filmes</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/all.css">
+    <link rel="shortcut icon" href="/assets/movie_web_page_projeto.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/assets/slick-1.8.1/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/slick-1.8.1/slick-1.8.1/slick/slick-theme.css"/>
+</head>
+<body>
+    <header>
+        <div>
+            <a class="logo">TMDB - API <img width="25px" height="25px" src="/assets/logo.png" alt=""></a>
+        </div>
+        <div>
+            <nav class="menu">
+                <ul>
+                    <li><a href=""></a><a href="">Filmes</a></li>
+                    <li><img width="30px" height="30px" src="/assets/movie_web_page_projeto.png" alt=""></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="prenc"></div>
+    <section class="container">
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href=""><img width="50px" height="50px" src="/assets/netflix-icon.png" alt=""> <h2>Neftlix</h2></a></li>
+                    <li><a href=""><img width="50px" height="50px" src="/assets/HBO-icon.png" alt=""> <h2>HBO Max</h2></a></li>
+                    <li><a href=""><img width="50px" height="50px" src="/assets/Disney-icon.png" alt=""> <h2>Disney+</h2></a></li>
+                    <li><a href=""><img width="50px" height="50px" src="/assets/Prime-Video.png" alt=""> <h2>Prime Video</h2></a></li>
+                    <li><a href=""><img width="50px" height="50px" src="/assets/Crunchyroll-Icon.png" alt=""> <h2>Crunchyroll</h2></a></li>
+                    <li><a href=""><img width="50px" height="50px" src="/assets/Contato-Icon.png" alt=""> <h2>Contato</h2></a></li>
+                </ul>
+            </nav>
+        </aside>
+        <main>
+            <div class="slides">
+                <div><a href=""><img style="border-bottom: 10px solid black;" width="100%" height="100%" src="/assets/images/slide 01-min.jpg" alt=""></a></div>
+                <div><a href=""><img style="border-bottom: 10px solid black;" width="100%" height="100%" src="/assets/images/slide 02-min.jpeg" alt=""></a></div>
+                <div><a href=""><img style="border-bottom: 10px solid black;" width="100%" height="100%" src="/assets/images/slide 03 compress.png" alt=""></a></div>
+              </div>
+        </main>
+    </section>
+    <section class="container-conteudo">
+        <div class="box1">
+            <a><h3><i class="fa-solid fa-business-time"></i> Portfólio</h3></a>
+        </div>
+        <div class="box2">
+            <a href="" title="GitHub"><h3><i class="fa-brands fa-github"></i> GitHub</h3></a>
+        </div>
+        <div class="box3">
+            <a><h3>Mais <i class="fa-solid fa-plus"></i></h3></a>
+        </div>
+    </section>
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/assets/slick-1.8.1/slick-1.8.1/slick/slick.min.js"></script>
+    
+    <script type="text/javascript">
+        $('.slides').slick({
+            infinite: true,
+            speed: 300,
+            arrows: false,
+            slidesToShow: 1,
+            adaptiveHeight: true
+});
+	</script>
+</body>
+</html>
